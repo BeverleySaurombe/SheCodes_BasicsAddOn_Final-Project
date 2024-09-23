@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverley BasicsAddOnFinalProject</title>
+<style>
+  body {
+        background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        max-width: 100% auto;
+        border-radius: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      .library-picture-animation {
+        size: 100%;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .library-picture-animation:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid plum;
+        background: white;
+        font-size: 18px;
+        border-radius: 6px;
+        padding: 10px 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid black;
+      }
+
+      footer {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+
+      .theme-button {
+        font-size: 15px;
+        background: black;
+        color: white;
+        padding: 5px 8px;
+      }
+
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .grid img  {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(2);
+      }
+
+      .dark-theme {
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        color: white;
+      }
+
+      .dark-theme .container {
+        background:linear-gradient(178.1deg, rgb(60, 55, 106) 8.5%, rgb(23, 20, 69) 82.4%);;
+      }
+
+      .dark-theme a {
+        color: rgb(240, 11, 240);
+      }
+</style>
+</head>
+<body>
+<button class="theme-button">Change theme</button>
+<div class="container">
+<h1>Reading</h1>
+<h2> My favourite hobby! 📖</h2>
+<a href="https://en.wikipedia.org/wiki/Reading" target="_blank">
+    
+<img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/141/233/original/resized1.jpg?1724830337"
+      alt=""
+      class="library-picture-animation"
+    />
+</a>
+<div class="grid">
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/141/133/original/download_%281%29.jpg?1724748101"
+      alt=""
+    />
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/141/132/original/download.jpg?1724748090"
+      alt=""
+    />
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/141/159/original/jlast_one.jpg?1724762955"
+      alt=""
+    />
+    <img
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/141/158/original/images_%281%29_ndfdkmf.jpg?1724762826"
+    alt=""
+    />
+
+</div>
+    
+<p>
+    Reading is generally an individual activity, done silently, although on occasion a person reads out loud for other listeners; or reads aloud for one's own use, for better comprehension. As a leisure activity, children and adults read because it is enjoyable and interesting.
+    <br />
+    
+    👉🏽<a href="https://en.wikipedia.org/wiki/Reading" target="_blank">
+      <strong> Read on Wikipedia </strong>
+    </a>
+</p>
+<br />
+<button class="read-button">Read with me?😃</button>
+</div>
+
+
+<footer>
+
+    <script>
+        function changeTheme() {
+          let body = document.querySelector("body");
+  
+          body.classList.toggle("dark-theme");
+        }
+
+        function acceptInvitation() {
+      let name = prompt("What is your first name?");
+      let email = prompt("What is your email?");
+
+      alert(
+        "Thank you for accepting my invitation" + " " +
+        name +
+        "! Please check your email for more details. Feel free to reply to the email if you have any questions 😊"
+        );
+    }
+
+    let acceptInvitationButton = document.querySelector(".read-button");
+    acceptInvitationButton.addEventListener("click", acceptInvitation);
+  
+        let themeButton = document.querySelector(".theme-button");
+        themeButton.addEventListener("click", changeTheme);
+      </script>
+Coded with ❤️ by
+<a href="https://www.linkedin.com/in/beverleysaurombe" target="_blank">Beverley Saurombe</a> 
+</footer>
+</body>
+</html>
